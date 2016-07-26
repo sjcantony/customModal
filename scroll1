@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{ background: black;  color: pink;}
+		.first,.second,.third,.four,.five,.six{ border: 2px solid steelblue; margin: 10px; height: 300px;}
+		.second{ height: 600px;}
+		.goOn{ float: left; width: 500px; padding: 30px; border: 2px solid lightgreen ; }
+		.tobefixedwrap{ position: relative; left: 575px;width: 565px; top: 0;}
+		.toBeFixed{ position: absolute; width: 500px; padding: 30px; border: 2px solid lightgreen ;}
+		.clearfix{ clear: both; }
+	</style>
+</head>
+<body>
+<div class="wrapper">
+	<div class="first"></div>
+	<div class="second">
+		<div class="goOn">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<div class="tobefixedwrap">
+			<div class="toBeFixed">
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+				<p>I will be fixed at a point of time</p>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		
+	</div>
+	<div class="third">
+		
+	</div>
+	<div class="four">
+		
+	</div>
+	<div class="five">
+		
+	</div>
+	<div class="six">
+		
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="jquery.js"></script>
+<script>
+	$(document).ready(function(){
+		elePos = $('.tobefixedwrap').position().top;
+		bottomElePos = elePos - $('.tobefixedwrap').height();
+		$(window).scroll(function()
+		{
+			console.log("scroll--  "+$(this).scrollTop() +"  --elePos--  "+elePos+"  --bottomElePos--  "+bottomElePos+"  --scroll+ele height--  "+($(this).scrollTop()+$('.tobefixedwrap').height()));
+
+			if ($(this).scrollTop() >= elePos)
+			{
+				console.log('stop');
+				$('.toBeFixed').css('position','fixed');
+				if ($(this).scrollTop() >= bottomElePos) {
+					$('.toBeFixed').css({'position':'absolute','top':$(this).scrollTop() - 329});
+					if ($(this).scrollTop() - 329 > 156) 
+					{
+						$('.toBeFixed').css({'position':'absolute','bottom':0});
+					}
+				}
+			}
+			else
+			{
+				$('.toBeFixed').css({'position':'absolute','top':0});
+			}
+
+			
+		})
+	});	
+</script>
+</html>
