@@ -1,0 +1,349 @@
+
+body{margin: 0;padding: 0;font-family: "NeueHaasGroteskDisplayBold";color: #000; overflow-y: scroll;}
+*{outline:none;}
+li{ list-style-type: none; }
+input[type="text"]{font-family: "NeueHaasGroteskDisplay"; color: #000;}
+.bodyContent{width: 100%;}
+h3{ font-size: 16px; }
+label{ font-size: 14px;}
+h2{ font-size: 20px; }
+p,span{font: normal 14px Arial, Helvetica, sans-serif;}
+.manageAccouintsForm p.haveConcern,.manageAccouintsForm p.reviwedTxt{ font-size: 13px; color: #666666; margin: 0 0 10px 0;}
+.orderIdAndCompletion{ background: #F1F1F1; padding: 15px 0 15px 0; border-top: 1px solid #D2D3D4 }
+.orderidAddress{float: left; margin-top: 15px; width: 550px;}
+.percentageCompleted{padding: 4px; float: right;}
+.orderidAndAddressWrap .orderId{ font-size: 30px; font-weight: bold;float: left; }
+.orderidAndAddressWrap,.thanksForOrderContent{width: 960px; margin: 0 auto; color: #666666;}
+.thanksForOrderContent{ margin-top: 72px; }
+.orderidAndAddressWrap{ color: #333333; }
+.thanksForOrderContent h2{ color: #000; }
+.orderidAndAddressWrap .quoteId{ float: left; border-radius: 25px; padding: 5px 10px; background:#fff; border: 1px solid darkgray; margin: 4px 0 0 30px; font-weight: bold;}
+.reviewAndFill{ width: 960px; margin: 0 auto; border-bottom: 1px solid #D2D3D4}
+.reviewAndFill p{ padding:20px 0; font-size: 17px;}
+.longBeach{ font-weight: bold; font-size: 18px; margin: 0 15px 0 0;}
+.fullAddress{ font-size: 14px;}
+.newContacts{ display:block!important;}
+.contentsToFillbyCustomer{ margin: 0 auto; width: 960px; }
+.contentsToFillbyCustomer .accordian,.proceedTab{ font-size: 24px; font-weight: bold;  border-top: 1px solid #e5e5e5; transition: color 500ms;line-height: 150px; cursor:pointer; transition: box-shadow 500ms;
+z-index: 1000;position: relative;}
+.proceedTab{ cursor: default; }
+.proceedTab .upDownArrow{ display: none!important; }
+.contentsToFillbyCustomer .accordian:hover{color:rgb(205, 4, 11);
+	/*box-shadow: 0px 6px 33px 0px rgba(0, 0, 0, 0.18);*/
+	box-shadow: 0px 6px 33px 0px #e4e5e3; border-top: 1px solid #fff;}
+.accordianImage{ transition: all 500ms;}
+.contentsToFillbyCustomer .currentSelectedAccordian{color:rgb(205, 4, 11);}
+.contentsToFillbyCustomer .accordian:hover  .accordianImage{margin-left: 25px; }
+.contentsToFillbyCustomer .upDownArrow.accordianSprite{background-position: 0px -768px;  height: 25px; width: 25px; float: right; margin: 60px 30px 0 0; transition:all 500ms;}
+.pie-title-center {display: inline-block;position: relative;text-align: center; background:#fff; border-radius: 50%;height: 90px;}
+.pie-value,.percentSymbol {display: block;position: absolute;font-size: 28px;height: 40px;top: 50%;left: 10px;right: 0;margin-top: -20px;line-height: 40px; color: #8dd1b2; font-weight: bold; font-family:'NeueHaasGroteskDisplay'; width: 45px; text-align: center;}
+.percentSymbol{ font-size: 18px; left:49px;  width: 30px; top: 47px;}
+.completionPercent,.completeTxt{ float: left; }
+.completionPercent{margin-right: 20px;}
+.billInfoProduct .accordian{ border-bottom: 1px solid #e5e5e5; }
+.addnewTxts{display:none;}
+select,input[type="text"]{ color: #000!important; }
+input[type='text'] {border: 1px solid #d2d3d4;padding: 3px 0 3px 25px;color: #595a5d; height: 28px;}
+.completeTxt{ line-height: 90px; color: gray; font-size: 17px;}
+.contentsToFillbyCustomer .accordianContent{ background: #F1F1F1;padding: 20px 20px 20px 55px; display: none;}
+.contentsToFillbyCustomer .accordianContent ul li{ list-style-type: none; float: left;margin-right: 22px; }
+.contentsToFillbyCustomer .accordianContent ul li.editLinkLi{ margin-top:5px;}
+.contentsToFillbyCustomer .accordianContent ul{ padding: 0; }
+.contentsToFillbyCustomer a{ text-decoration: none; }
+.editLink,.searchTxt a,.cancelLink{color: #0066cc;font-weight: bold;   font-size: 15px;}
+.searchTxt a{ font-size:14px;}
+.primaryContactDetails{ border-bottom: 1px solid #D2D3D4;}
+.primaryContact input[type='text'],.sameasContact input[type="text"]{ transition: all 500ms; border: none;background: none; }
+.control-group{float: left;}
+.contentsToFillbyCustomer .selectedInfo.accordianSprite{margin: 5px 0 0 0;padding: 0 0 0 30px;color: #36b122;font-weight: bold;float: left; height: auto; width: auto; background-position: 9px -123px;}
+.contentsToFillbyCustomer .whatisThis.accordianSprite{height: 20px;width: 20px;background-position: 0 -99px;display: block;float: left;margin: 0}
+.primaryContact input[disabled="disabled"]{color: #000;}
+.contentsToFillbyCustomer .accordianContent ul.additionalDetailsLists li{ margin-right:27px;}
+.vz_btn_secondary {padding: 0 16px;height: 36px;line-height: 36px;display: inline-block;background-color: #e4e5e3;color: #4b4b4b;text-decoration: none;font-family: "NeueHaasGroteskDisplayBold";font-size: 14px;}
+.contentsToFillbyCustomer select{width: 150px;padding: 5px;color: gray;     border: 1px solid #d2d3d4;}
+.addNewBtn{margin-top:10px;}
+.listOfContacts{ padding:5px 5px 5px 0;border-bottom: 1px solid #D2D3D4;}
+.additionalContactInto .listOfContacts ul{ margin-top: 0; }
+.additionalContactInto .listOfContacts ul .additionalDetailsLists li p{ margin-top: 13px; }
+.contentsToFillbyCustomer .accordianContent ul.newContacts li{ margin-right:22px;}
+.contentsToFillbyCustomer .accordianContent ul.newContacts{ margin:0; margin-bottom:15px;}
+.sameAsdropdown{margin-top:12px;}
+.saveBtn{margin-left: 625px; margin-top:20px;}
+.cancelLink{margin-top:27px;}
+.searchTxt{ margin-top:18px;}
+.additionalProductDesc{ float:left; width:600px;}
+.receivedInfo{ margin: 0; margin-bottom: 29px; }
+.additionlInfoProduct{ position:relative;}
+.confirmProductContent p.additionalProductDesc:first-child{ margin: 0 }
+.confirmProductContent .tab-content li p{margin-bottom: 40px; }
+.confirmProductContent .tab-content li p span{ float: left; }
+.processButtonWrap{ width: 375px; float: left; padding: 6px 0;}
+.haveConcernWrap{ width: 500px; float: left; padding-left: 25px; border-left: 1px solid #e5e5e5;}
+.proceedSection div p{ margin: 0 }
+select{ color: #a9a9a9!important; }
+.proceedSection{ padding: 20px 20px 20px 0; }
+p.placeholder,div.placeholder{height: 300px;text-align: center;color: lightgray;font-size: 30px;}
+.contentsToFillbyCustomer .requestServiceDetailsContent.accordianContent{ background: #fff; padding: 0; }
+.requestServiceDetailsContent .requestServiceDetailsInfo{ background: #F1F1F1; padding: 40px;}
+.returnOrderLink,.readinessSite{color:#0066cc; font-weight: bold;font-size: 16px;}
+.readinessSite,.specialAccessDetails h2,.siteAccessHead,.requestDateHead{ font-family: Arial;font-weight: bold;font-size: 14px;}
+.siteAccessHead.requestDateHead{ font-size: 18px; }
+.primaryContact li:first-child input[type="text"],.mailTxt input,.newContacts li:first-child input[type="text"]{ width: 282px; height: 28px;}
+.mailTxt{ margin-top: 10px; }
+.submitSection{margin:40px auto 30px auto; width: 960px;}
+.buttonList ul li{ float: left;margin-right: 18px; }
+.vz_iagreeLbl{position: relative;top: 3px; font-family: Arial}
+.newContacts .spriteTelephone{ top: 10px; }
+/*.newContacts .spriteName{ top: 12px; }*/
+.telephone{ width: 116px; }
+.mobile{ width: 155px; }
+input.extn{ width: 60px;padding-left: 6px; margin-left: 10px;}
+.newContacts .spriteMobile{ top: 8px; }
+/*.submitSection{width: 960px;}*/
+.additionalDetailsLists li:first-child p{ width:400px; margin-left: 0px;}
+.additionalDetailsLists li:first-child{ width:410px;}
+/*.billInfoProductContent.accordianContent ul li{ float: none; }*/
+.createAddr{ border-bottom: 1px solid #e9e9e9;}
+.billInfoProductContent.accordianContent ul.primaryContact li,.billInfoProductContent.accordianContent ul.technicalDetails.additionalDetailsLists li,.billInfoProductContent.accordianContent ul.newContacts li{ float: left; }
+.billInfoProductContent.accordianContent ul.primaryContact{ margin: 0; }
+.existingAcc ul li label{    float: left;width: 184px;margin-top: 3px; font-size: 16px; }
+.attn{ color:#a7a7a7;}
+.longBeachExisting{ font-size: 18px;  margin: 0;}
+.existingAcc .existingAddress,.createNew .existingAddress{ padding: 20px; border: 1px solid #e4e5e3; width: 450px; background: #fff;}
+.createNew,.existingAcc{ display: none; }
+.confirmProduct,.installInstrucProduct,.addContacts,.billInfoProduct,.submitSection{display: none;}
+.floorRoom{ width: 620px; }
+.whatFloorWrap, .whichRoomWrap{float: left;width: 225px;}
+.whichRoomWrap{width: 315px;}
+.videoContainer{     width: 560px;    margin: 27px 132px 13px;}
+.timeAndDate ul li{ width: 150px; }
+.whichBuilding{ width: auto; display: none;}
+.timeAndDate ul li.dayContent,.timeAndDate ul li.timeContent{ width: 125px; }
+.timeAndDate ul li select{ margin-top: 7px;  width: 125px;}
+.understandResponWrap  .control__indicator{ top: 9px; }
+.vz_understandResponLbl p{ margin-left: 8px; font-size: 12px;}
+.understandResponWrap{ border-bottom: 1px solid #cccccc; margin-bottom: 20px;}
+.timeAndDate{ float: left; }
+.specialAccessDetails{ float: right;width: 450px; }
+.specialAccessTxt,.enterIpaddress{width: 383px;height: 162px;resize: none; font-family: 'NeueHaasGroteskDisplay'}
+.enterIpaddress{width:326px; height:100px}
+.specialAccessDetails h2{ margin: 10px 0; }
+.specialAccessDetails p{ float: left;font-size: 13px; }
+.contentsToFillbyCustomer  .timeAndDate ul li{ margin: 0 }
+.specialAccessDetails p.minChar{ float: right;    margin-right: 60px; font-family:  }
+.demarcation{ font-size: 18px; }
+.whereToInstall{ margin-bottom: 25px; }
+.timeAndDate select{width:275px;}
+.morethanBuildUl{     margin: 0;margin-top: 10px; }
+.timeAndDate li label ,.requestDateForInstallation li label{font-size: 12px;}
+.requestDateForInstallation{ float: left; }
+.requestDateForInstallation p{ width: 400px; margin-bottom: 30px;}
+.requestDateForInstallation .control{ float: none; }
+.siteReadinessTxt{ margin-top: 35px;}
+.requestDateForInstallation .control__indicator{ top: -1px; }
+.datepicker{ opacity: 1!important;position: relative!important;z-index: inherit!important;top: -22px;left: 98px;width: 123px;height: 23px!important;background: #fff url(../images/datepicker.png) no-repeat;background-position: 5px 5px;padding-left: 32px!important;}
+.verizonDate{ font-size: 16px; font-weight: bold; }
+.requestDateForInstallation .control{ margin-bottom: 40px; }
+
+.reviewAllInfoHead ul li,.showDescDesc label.vz_descLbl,.onoffswitch{ float: left; }
+.contentsToFillbyCustomer .accordianContent ul li.showDescDesc label.vz_descLbl{margin:4px 10px 0 0; font-family: Arial; font-size: 14px;}
+.contentsToFillbyCustomer .accordianContent ul li.showDescDesc{ margin-left: 180px; }
+.editLink a{color:#0066cc; font-size: 14px;}
+.editLink{margin-top: -2px;    padding: 5px 0 5px 24px; border-left: 1px solid #c5c5c5;}
+.pleaseReviewTxt{ width: 430px; }
+.reviewAllInfoHead ul{ margin: 0; }
+.descriptionContent ul li{ float: left; width: 420px; margin-bottom: 21px;}
+.descriptionContent ul li label{ font-weight: bold; }
+.descriptionContent ul li span:first-child{ float: left;width: 200px; }
+.descriptionContent ul li p{ font-size: 12px;    opacity: .7; }
+.reviewAllInfoHead{ padding-bottom: 9px;border-bottom: 1px solid #dddddd;}
+.additionalContactInto h3{ margin-bottom: 0 }
+.descriptionContent .requiredInfo .control-group label span{ width: auto; }
+.requiredInfo label{ float: left; min-width: 170px; }
+.configurations{ border-bottom: 1px solid #dddddd; }
+.requiredInfo label{ font-size: 14px; font-family: Arial; margin-top: 11px;}
+.requiredInfo .radioContainer .control-group label{min-width: auto; margin-top:6px;}
+.requiredInfo label.vz_voiceorvideoLbl{width: 160px;}
+.voidOrVideoingContainer.control-group{margin: 18px 14px;}
+.asOverride p{ margin: 0; }
+.descriptionContent ul li.asOverride{ margin-bottom: 0; }
+.iplistTxt label{ margin-bottom: 15px; }
+.requiredInfo .radioContainer{ float: left; }
+.contentsToFillbyCustomer .accordianContent .requestServiceDetailsInfo ul{ float: left; width: 440px; }
+.contentsToFillbyCustomer .accordianContent .requestServiceDetailsInfo ul li{ float: none; padding: 10px 0;}
+.privateIpHead,.accessHead{ font-style: 18px; margin: 0}
+.serviceCommitment{ font-size: 14px;   margin: 4px 0 0 0;font-family: Arial; }
+.descriptionContent ul li p{ display: none; }
+.pipPort,.localAccess{ margin-top: 5px; }
+.accessWrap{ padding-top: 25px; }
+.privateIpWrap{padding-bottom: 35px;border-bottom: 1px solid #e4e5e3;}
+.privateIpWrap ul li label,.accessWrap ul li label{float: left;width: 230px;font-family: Arial;font-weight: bold; }
+.specificHours .checkboxLi{ width: 100px; }
+.timeAndDate .specificHours ul li select{ width: 95px; }
+.contentsToFillbyCustomer .timeAndDate ul li.checkboxLi{ margin-top: 12px; font-weight: bold;  margin-right: 20px;}
+.specificHours ul li label{ padding-right: 5px!important; }
+.daysLbl{ position: relative;top: 4px;font-family: Arial; }
+.specificHours{ display: none; margin-top: 12px;}
+.specificHours ul{ margin: 0; }
+.bestDateInfo,.specificDateInfo{ font-family: Arial; font-size: 13px;    padding: 22px 30px 22px 60px;width: 740px; margin-top: 10px;margin: 10px 0 40px 0; position: absolute; top: 0}
+.bestDateInfo{background: #bcdaff;}
+.specificDateInfo{background: #ffe8a5; display: none;}
+.dataInfoWrap{ position: relative;    height: 140px; }
+.sameasContact{ display: none; }
+.primaryContact .editLink{ border: none; }
+.accrualChange{    margin: 20px 0; width: 800px;}
+.billingAddrHead{ margin: 0 }
+.newAddressWrap input.addressLines{ width: 385px; }
+.contentsToFillbyCustomer select{ height: 36px; }
+.newAddressWrap select{ height: 36px; width: 182px; }
+.newAddressWrap li{ margin-top: 30px; }
+.newAddressWrap input{ width: 181px; }
+.clearfix{clear:both;}
+
+
+/*toggle on Off Button*/
+.onoffswitch {position: relative; width: 60px;-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;}
+.onoffswitch-checkbox {display: none;}
+.onoffswitch-label {display: block; overflow: hidden; cursor: pointer;border-radius: 20px;}
+.onoffswitch-inner {display: block; width: 200%; margin-left: -100%;transition: margin 0.3s ease-in 0s;}
+.onoffswitch-inner:before, .onoffswitch-inner:after {display: block; float: left; width: 50%; height: 25px; padding: 0; line-height: 25px;font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;box-sizing: border-box;}
+.onoffswitch-inner:before {content: "On";padding-left: 10px;background-color: #e4e5e3;color: #333333;}
+.onoffswitch-inner:after {content: "Off";padding-right: 10px;background-color: #e4e5e3; color: #333333;text-align: right;}
+.onoffswitch-switch {display: block;width: 17px;margin: 4px;background: #FFFFFF;position: absolute;top: 0;bottom: 0;right: 34px;border-radius: 20px;transition: all 0.3s ease-in 0s;box-shadow: inset 0 0 0 2px #333333;}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner { margin-left: 0;box-shadow: inset 0 0 0 5px #cd040b;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {right: 0px; box-shadow: inset 0 0 0 5px #cd040b;}
+
+/*on off toggle button*/
+
+
+/*multiple location css*/
+
+.multipleLocationContent{width: 960px; margin:0 auto;}
+.multipleLocationContent .control-group label{ position: relative;top:6px; }
+.multipleLocationContent .selectAll{    padding: 8px 0 8px 0;border-bottom: 1px solid #cccccc;}
+.listOfLocation{ position: relative; }
+.listOfLocation ul.locations{ margin: 0; padding: 16px 0; border-bottom:1px solid #cccccc;  }
+.listOfLocation ul.locations li{ float: left; }
+.listNumbers{ width: 65px;height: 65px;background: lightgray;border-radius: 50%;line-height: 69px;text-align: center;}
+.multipleLocationContent .vz_btn_secondary span{padding: 0; min-width: auto;}
+.addressDetails{ width: 285px; }
+.listOfLocation ul.locations li:first-child{ margin-left: 20px; margin-top: 20px; }
+.listOfLocation ul.locations li:nth-child(2){ margin-left: 25px; margin-top: 10px;}
+.listOfLocation ul.locations li:nth-child(3){ margin-left: 20px; margin-top: 10px;}
+.listOfLocation ul.locations li:nth-child(4){ margin-left: 85px; margin-top: 25px;}
+.listOfLocation ul.locations li:nth-child(5){ margin:25px 85px 0 70px;}
+.listOfLocation ul.locations li:nth-child(6){ margin-top: 28px;}
+.listOfLocation .addressDetails p{ margin: 0; padding: 0; margin-top: 5px;}
+.listOfLocation .placeName{font-size: 18px;margin: 0;height: 23px;}
+.numbers{ font-size: 24px}
+.selectAllChk{ height: 20px; font:14px Arial, Helvetica, sans-serif!important; font-weight: bold!important;font-size: 14px;}
+.multipleLocationContent .selectAll .control-group label.control {left: 21px; }
+.manageMultipleAccouintsForm .submitSection{ display: block; }
+.agreeError,.chooseOneSite{background: #ffd9da;padding: 18px 10px; font-size: 14px; color: #6e3347; }
+.errorMsgWrapper{ display: none;  }
+.agreeError span.closeIt,.chooseOneSite span.closeIt{    background: #6e3347;color: #ffd9da;padding: 5px 8px;border-radius: 50%;font-size: 12px;margin: 0 9px 0;position: relative;top: -1px;}
+.information{ width: 530px; float: left; }
+.thanksForOrderContent h2{ height: 25px;  font-size: 24px; margin: 9px 0 9px 0;}
+.thanksForOrderContent h2:nth-child(2){ margin-bottom: 27px; }
+.listOfSubmittedSites{ height: 19px; }
+/*multiple location css*/
+
+/*.sprite image code starts*/
+
+.primaryContact li,.newContacts li{ position: relative;}
+.spriteImages{ position: absolute;background: url('../images/spriteImage.png'); }
+.spriteName{    height: 15px; width: 19px;z-index: 1;top: 10px;left: 5px;background-position: 0px -793px;}
+.spriteMobile{height:19px;width:16px;z-index:1;top:6px;left:6px;background-position: 0 -839px;}
+.spriteTelephone{    height: 16px;width: 16px;z-index: 1;top: 9px;left: 6px;background-position: 0 -868px;}
+.spriteMail{ height: 18px;width: 20px;z-index: 1;top: 11px;left: 4px;background-position: 0 -817px;}
+
+.contentsToFillbyCustomer .accordianSprite,.thanksForOrderContent .accordianSprite{ background: url('../images/spriteImage.png') no-repeat;display: block;float: left;height: 95px;width: 109px;margin: 28px 10px 0 0;}
+.thanksForOrderContent .accordianSprite    
+{
+	width: 268px;
+    height: 257px;
+    background-position: 0 -505px;
+    float: left;
+    margin: 0 0 30px 70px;
+}
+.contentsToFillbyCustomer .addContactTxt.accordianSprite{ background-position: 5px -102px;}
+.contentsToFillbyCustomer .confirmProductTxt.accordianSprite{background-position: 5px -405px; }
+.contentsToFillbyCustomer .billInfoProductTxt.accordianSprite{background-position: 5px 0;}
+.contentsToFillbyCustomer .installInstrucProductTxt.accordianSprite{background-position: 4px -206px;}
+.contentsToFillbyCustomer .requestServiceDetailsTxt.accordianSprite{  background-position: 4px -304px; }
+.addContactTxt.accordianSprite,.requestServiceDetailsTxt.accordianSprite,.confirmProductTxt.accordianSprite,.billInfoProductTxt.accordianSprite,.installInstrucProductTxt.accordianSprite{transform: rotate(0deg)!important;}
+
+/*.sprite image code ends*/
+
+/*horizontal tab css starts here*/
+
+.tabs-hor-menu li a { padding: 0 0 5px 0; color: #595a5d; text-decoration: none; line-height: 17px;
+ display: inline-block; font-size: 14px; margin-bottom: 5px;}
+ .tabs-hor-menu li{ float: left; }
+.tabs-hor-menu .current a { color: #ed1c24; border-bottom: 2px solid #ed1c24; }
+.tab { border-top: none;float: left;margin-bottom: 20px;width: 920px;min-height: 475px;overflow: hidden;position: relative; }
+.tab-content { width: 865px; display: none; min-height:377px; position:absolute;left: 925px;}
+#tab-1 { display: block; left:0; }
+.orderDetails{ float:right;}
+.tab-content ul li{ width:100%;}
+.orderDetailsContent{display:none;}
+.orderDetailsContent ul li label {float: left;width: 130px; font-weight:bold;}
+.orderDetailsContent ul li {padding: 5px;}
+.closeOrderDetails{float: right;margin: 20px 0 0 0;}
+.orderDetailsContent{position: absolute;box-shadow:2px 2px 7px 0px gray;width: 300px;padding: 30px;background: #fff;word-wrap: break-word;top: 41px;right: 0;z-index: 10;}
+.orderDetailsContent p.orderDetailsDesc{ width: auto!important;}
+
+/*horizontal tab css ends here*/
+
+
+/*custom ratio button*/
+
+.control{font-size:13px;position:relative;display:block;margin-bottom:15px;padding-left:25px;cursor:pointer; float:left;}
+.control input{position:absolute;z-index:-1;opacity:0}
+.control__indicator{position:absolute;top:2px;left:0;width:16px;height:16px;background:#fff;border: 1px solid #c5c5c5;}
+.control--radio .control__indicator{border-radius:50%;}
+.control:hover input ~ .control__indicator,.control input:focus ~ .control__indicator{background:#fff}
+.control input:checked ~ .control__indicator{background:#fff; }
+.control:hover input:not([disabled]):checked ~ .control__indicator,.control input:checked:focus ~ .control__indicator{background:#fff}
+.control input:disabled ~ .control__indicator{pointer-events:none;opacity:.6;background:#e6e6e6}
+.control__indicator:after{position:absolute;display:none;content:''}
+.control input:checked ~ .control__indicator:after{display:block;}
+.control--checkbox .control__indicator:after{top: 1px;left: 5px;width: 4px;height: 8px;transform: rotate(45deg);border: solid #cd040b;border-width: 0 2px 2px 0;}
+.control--checkbox input:disabled ~ .control__indicator:after{border-color:#7b7b7b}
+.control--radio .control__indicator:after{top:5px;left:5px;width:6px;height:6px;border-radius:50%;background:#cd040b}
+.control--radio input:disabled ~ .control__indicator:after{background:#7b7b7b}
+.control--radio span{ display:block; margin:5px 25px 0 0;}
+
+/*old codes reused*/
+/*---------------------------------------------------*/
+
+/*for buttonn*/
+.vz_btn_primary {padding: 0 16px;height: 36px;line-height: 36px;display: inline-block;background-color: #cd040b;color: #fff;text-decoration: none;font-family: "NeueHaasGroteskDisplayBold";font-size: 14px;}
+.vz_btn_primary span {display: inline-block;background: url(../images/btnArrow.png) right 0 no-repeat;height: 12px;width: 8px;margin-left: 12px;position: relative;top: 1px;}
+.vz_btn_primary:hover {background-color: #a80309;text-decoration: none;}
+.vz_btn_primary:focus { background-color:#990308; text-decoration:none; }
+.vz_btn_secondary {padding: 0 16px;height: 36px;line-height: 36px;display: inline-block;background-color: #e4e5e3;color: #4b4b4b;text-decoration: none;font-family: "NeueHaasGroteskDisplayBold";font-size: 14px;}
+.vz_btn_secondary:hover { color:#333333; text-decoration:none; }
+.vz_btn_secondary:focus { background-color:#cccccc; color:#000000; text-decoration:none; }
+.vz_btn_secondary span {color: #4b4b4b;display: inline-block;font-size: 14px;font-weight: bold;min-width: 55px;height: 35px;text-align: center;vertical-align: middle;line-height: 35px;padding: 0;text-indent: -10px;padding: 0 15px;}
+.addNewBtn .vz_btn_secondary span,.saveBtn span{ min-width: auto;padding: 0; }
+.agreeCheck .control{ margin-left: 0; }
+.agreeCheck .control-group{ margin-left:0; margin-bottom: 22px;  }
+.buttonList ul{ padding:0; margin: 0; }
+
+/*old codes reused*/
+/*old codes reused*/
+
+/*fonts starts*/
+
+@font-face { font-family: "NeueHaasGroteskText"; src: url("../fonts/NeueHaasGroteskText.eot?#iefix"); src: url("../fonts/NeueHaasGroteskText.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskText.woff2") format("woff2"), url("../fonts/NeueHaasGroteskText.woff") format("woff"), url("../fonts/NeueHaasGroteskText.ttf") format("truetype"), url("../fonts/NeueHaasGroteskText.svg#389e288e-637b-44b2-9b5a-4ecec3ae8e2c") format("svg"); font-weight: 400; font-style: normal; }
+@font-face { font-family: "NeueHaasGroteskTextMedium"; src: url("../fonts/NeueHaasGroteskTextMedium.eot?#iefix"); src: url("../fonts/NeueHaasGroteskTextMedium.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskTextMedium.woff2") format("woff2"), url("../fonts/NeueHaasGroteskTextMedium.woff") format("woff"), url("../fonts/NeueHaasGroteskTextMedium.ttf") format("truetype"), url("../fonts/NeueHaasGroteskTextMedium.svg#9cd38052-e8fa-4a89-bfee-01d1675c9aa1") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "NeueHaasGroteskTextBold"; src: url("../fonts/NeueHaasGroteskTextBold.eot?#iefix"); src: url("../fonts/NeueHaasGroteskTextBold.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskTextBold.woff2") format("woff2"), url("../fonts/NeueHaasGroteskTextBold.woff") format("woff"), url("../fonts/NeueHaasGroteskTextBold.ttf") format("truetype"), url("../fonts/NeueHaasGroteskTextBold.svg#c98782d3-8599-4314-b717-118a629a3aa4") format("svg"); font-weight: 700; font-style: normal; }
+@font-face { font-family: "NeueHaasGroteskDisplay"; src: url("../fonts/NeueHaasGroteskDisplay.eot?#iefix"); src: url("../fonts/NeueHaasGroteskDisplay.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskDisplay.woff2") format("woff2"), url("../fonts/NeueHaasGroteskDisplay.woff") format("woff"), url("../fonts/NeueHaasGroteskDisplay.ttf") format("truetype"), url("../fonts/NeueHaasGroteskDisplay.svg#5b9068b3-d518-4b0a-a5a2-1aa25714df22") format("svg"); font-weight: 500; font-style: normal; }
+@font-face { font-family: "NeueHaasGroteskDisplayMedium"; src: url("../fonts/NeueHaasGroteskDisplayMedium.eot?#iefix"); src: url("../fonts/NeueHaasGroteskDisplayMedium.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskDisplayMedium.woff2") format("woff2"), url("../fonts/NeueHaasGroteskDisplayMedium.woff") format("woff"), url("../fonts/NeueHaasGroteskDisplayMedium.ttf") format("truetype"), url("../fonts/NeueHaasGroteskDisplayMedium.svg#1baaf9ba-feec-45ca-a826-7bcf9f8e5b21") format("svg"); font-weight: 600; font-style: normal; }
+@font-face { font-family: "NeueHaasGroteskDisplayBold"; src: url("../fonts/NeueHaasGroteskDisplayBold.eot?#iefix"); src: url("../fonts/NeueHaasGroteskDisplayBold.eot?#iefix") format("eot"), url("../fonts/NeueHaasGroteskDisplayBold.woff2") format("woff2"), url("../fonts/NeueHaasGroteskDisplayBold.woff") format("woff"), url("../fonts/NeueHaasGroteskDisplayBold.ttf") format("truetype"), url("../fonts/NeueHaasGroteskDisplayBold.svg#31c5f190-f4d8-436b-99bf-0561dd448586") format("svg"); font-weight: 700; font-style: normal; }
+
+/*fonts starts*/
+
+/*old codes reused*/
